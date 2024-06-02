@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MSD ANIMAL HEALTH WEBSITE</title>
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+  <header style="display: flex; justify-content: space-between; align-items: center;">
+    <img src="videos/MSD1_LOGO.JPG" alt="MSD1 Logo" style="height: 50px;">
+  </header>
+  <h1 style="text-align: center;">Endometrial Cleaning by Intrauterine</h1>
+  <div class="image-container">
+    <div class="image-wrapper">
+      <a href="videos/Intra Utreine_water based_Done.mp4" onclick="redirectToPage('https://metricef.github.io/videosm/')">
+        <img src="videos/bottle.JPG" alt="Water-Based"><br><br>
+        <p style="font-weight: bold; font-size: 30px;">Conventional Water Based IU</p>
+      </a>
+    </div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <div class="image-wrapper">
+      <a href="videos/Metricef_Done.mp4" onclick="redirectToPage('https://metricef.github.io/videosm/')">
+        <img src="videos/metricef.JPG" alt="Metricef-Based"><br>
+        <img src="videos/metri_tm.JPG" alt="Metricef-Based">
+      </a>
+    </div>
+  </div>
+
+  <script>
+    function redirectToPage(url) {
+      var video = document.createElement('video');
+      video.src = url;
+      video.addEventListener('ended', function() {
+        window.location.href = url;
+      });
+      video.play();
+    }
+  </script>
+</body>
+</html>
